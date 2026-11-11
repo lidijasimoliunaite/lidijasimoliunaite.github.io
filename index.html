@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lidija Simoliunaite</title>
-<meta name="description" content="Lidija Simoliunaite — product, data and govtech. Founder of Buronia.">
+<meta name="description" content="Lidija Simoliunaite: founder of Buronia. Model at 14, web developer in school, building startups since.">
 <meta property="og:title" content="Lidija Simoliunaite">
-<meta property="og:description" content="Product · Data · Govtech. Founder of Buronia.">
+<meta property="og:description" content="Founder of Buronia. Model at 14, web developer in school, building startups since.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,8 +24,8 @@
   ::selection{background:var(--accent);color:var(--accent-ink)}
   .wrap{max-width:1180px;margin:0 auto;padding:0 32px}
   .mono{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+  em{font-family:var(--serif);font-style:italic;font-weight:400}
 
-  /* header */
   header.top{position:fixed;inset:0 0 auto 0;z-index:10;backdrop-filter:blur(12px);background:color-mix(in srgb,var(--bg) 70%,transparent);border-bottom:1px solid var(--line)}
   header.top .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
   .mark{font-weight:600;letter-spacing:-.01em}
@@ -33,79 +33,73 @@
   nav{display:flex;gap:28px}
   nav a{font-size:14px;color:var(--muted);transition:color .2s}
   nav a:hover{color:var(--ink)}
-  .status{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted)}
-  .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 var(--accent);animation:pulse 2.4s infinite}
-  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(198,243,107,.5)}70%{box-shadow:0 0 0 10px rgba(198,243,107,0)}100%{box-shadow:0 0 0 0 rgba(198,243,107,0)}}
 
-  /* hero */
   .hero{position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;padding:120px 0 56px;overflow:hidden}
-  #topo{position:absolute;inset:0;width:100%;height:100%;opacity:.55;pointer-events:none}
+  #topo{position:absolute;inset:0;width:100%;height:100%;opacity:.5;pointer-events:none}
   .hero .wrap{position:relative;width:100%}
-  .hero-meta{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:40px}
-  h1{font-family:var(--sans);font-weight:600;font-size:clamp(56px,11.5vw,168px);line-height:.88;letter-spacing:-.055em}
-  h1 .s{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.02em;color:var(--accent)}
-  .hero-bottom{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:end;margin-top:56px;padding-top:28px;border-top:1px solid var(--line)}
-  .lede{font-size:clamp(18px,1.8vw,22px);line-height:1.45;color:#cfd2cd;max-width:34ch}
-  .lede em{font-family:var(--serif);font-size:1.15em;color:var(--ink)}
+  .hero-meta{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:36px}
+  h1{font-weight:600;font-size:clamp(48px,9.6vw,148px);line-height:.92;letter-spacing:-.055em}
+  h1 .row{display:block}
+  h1 .k{font-family:var(--mono);font-size:.16em;letter-spacing:.06em;font-weight:500;color:var(--muted);vertical-align:top;margin-right:.6em;position:relative;top:.9em}
+  h1 em{color:var(--accent);letter-spacing:-.02em}
+  .hero-bottom{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:end;margin-top:52px;padding-top:28px;border-top:1px solid var(--line)}
+  .lede{font-size:clamp(18px,1.8vw,22px);line-height:1.45;color:#cfd2cd;max-width:36ch}
+  .lede em{font-size:1.15em;color:var(--ink)}
   .cta{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}
-  .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;font-size:15px;font-weight:500;border:1px solid var(--line);transition:transform .2s,background .2s,border-color .2s}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;font-size:15px;font-weight:500;border:1px solid var(--line);transition:transform .2s,border-color .2s;background:transparent;color:var(--ink);font-family:inherit;cursor:pointer}
   .btn:hover{transform:translateY(-2px);border-color:var(--muted)}
   .btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
   .btn .arr{transition:transform .2s}
   .btn:hover .arr{transform:translateX(3px)}
 
-  /* marquee */
   .marquee{border-block:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:22px 0;background:var(--bg2)}
-  .marquee .track{display:inline-block;animation:scroll 40s linear infinite}
+  .marquee .track{display:inline-block;animation:scroll 42s linear infinite}
   .marquee span{font-family:var(--serif);font-size:clamp(26px,3.4vw,40px);margin-right:48px;color:var(--muted)}
   .marquee span b{font-weight:400;color:var(--accent);margin-left:48px}
   @keyframes scroll{to{transform:translateX(-50%)}}
 
-  /* sections */
   section{padding:140px 0}
-  .head{display:grid;grid-template-columns:220px 1fr;gap:32px;margin-bottom:72px}
+  .head{display:grid;grid-template-columns:220px 1fr;gap:32px;margin-bottom:64px}
   h2{font-weight:600;font-size:clamp(36px,5vw,64px);line-height:1;letter-spacing:-.04em}
-  h2 em{font-family:var(--serif);font-weight:400;font-style:italic;letter-spacing:-.01em}
 
-  .focus{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
-  .focus > div{padding:36px 32px 40px 0;border-right:1px solid var(--line)}
-  .focus > div + div{padding-left:32px}
-  .focus > div:last-child{border-right:0}
-  .focus h3{font-size:24px;font-weight:600;letter-spacing:-.02em;margin:28px 0 12px}
-  .focus p{color:var(--muted)}
-
-  .project{display:grid;grid-template-columns:80px 1fr 1.1fr;gap:32px;padding:44px 0;border-top:1px solid var(--line);position:relative;transition:padding .3s}
-  .project:last-child{border-bottom:1px solid var(--line)}
-  .project::before{content:"";position:absolute;left:0;top:-1px;height:1px;width:0;background:var(--accent);transition:width .5s}
-  .project:hover::before{width:100%}
-  .project h3{font-size:clamp(26px,3vw,38px);font-weight:600;letter-spacing:-.03em;line-height:1.05}
-  .project h3 small{display:block;font-size:15px;font-weight:400;letter-spacing:0;color:var(--muted);margin-top:10px}
-  .project p{color:#c3c6c2}
+  .venture{display:grid;grid-template-columns:110px 1fr 1.1fr;gap:32px;padding:44px 0;border-top:1px solid var(--line);position:relative}
+  .venture:last-child{border-bottom:1px solid var(--line)}
+  .venture::before{content:"";position:absolute;left:0;top:-1px;height:1px;width:0;background:var(--accent);transition:width .5s}
+  .venture:hover::before{width:100%}
+  .venture h3{font-size:clamp(28px,3.2vw,42px);font-weight:600;letter-spacing:-.03em;line-height:1.05}
+  .venture h3 small{display:block;font-size:15px;font-weight:400;letter-spacing:0;color:var(--muted);margin-top:10px}
+  .venture p{color:#c3c6c2}
+  .venture .live{display:inline-flex;align-items:center;gap:8px;margin-top:20px;font-size:14px;color:var(--accent)}
+  .venture .live:hover{text-decoration:underline}
+  .now{display:inline-flex;align-items:center;gap:8px;color:var(--accent)}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:pulse 2.4s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(198,243,107,.5)}70%{box-shadow:0 0 0 10px rgba(198,243,107,0)}100%{box-shadow:0 0 0 0 rgba(198,243,107,0)}}
   .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
   .tag{font-family:var(--mono);font-size:11.5px;letter-spacing:.04em;padding:6px 10px;border:1px solid var(--line);border-radius:6px;color:var(--muted)}
 
-  .bg{display:grid;grid-template-columns:1fr 1fr;gap:80px}
-  .bg p.big{font-family:var(--serif);font-size:clamp(28px,3.2vw,40px);line-height:1.2}
-  .bg p.big em{color:var(--accent)}
-  .facts{border-top:1px solid var(--line)}
-  .facts div{display:flex;justify-content:space-between;gap:24px;padding:18px 0;border-bottom:1px solid var(--line)}
-  .facts dt{color:var(--muted)}
-  .facts dd{text-align:right}
+  .story{display:grid;grid-template-columns:1.05fr 1fr;gap:80px;align-items:start}
+  .story p.big{font-family:var(--serif);font-size:clamp(28px,3.2vw,40px);line-height:1.2}
+  .story p.big em{color:var(--accent)}
+  .path{list-style:none;border-top:1px solid var(--line)}
+  .path li{display:grid;grid-template-columns:96px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--line)}
+  .path .yr{font-family:var(--mono);font-size:13px;color:var(--accent);padding-top:3px}
+  .path b{font-weight:600;display:block}
+  .path span{color:var(--muted);font-size:15px}
 
-
-  .pov{margin:96px 0;padding:56px 0;border-block:1px solid var(--line)}
+  .pov{margin:110px 0 96px;padding:56px 0;border-block:1px solid var(--line)}
   .pov p{font-family:var(--serif);font-size:clamp(32px,4.6vw,60px);line-height:1.1;letter-spacing:-.01em;margin-top:20px;max-width:24ch}
   .trio{display:grid;grid-template-columns:1fr 1fr 1.2fr;gap:56px}
-  .timeline,.topics{list-style:none;margin-top:20px}
-  .timeline li{padding:14px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column}
-  .timeline b{font-weight:600}
-  .timeline span{color:var(--muted);font-size:15px}
-  .note{color:var(--muted);margin-top:20px;font-size:15px}
+  .list{list-style:none;margin-top:20px}
+  .list li{padding:14px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column}
+  .list b{font-weight:600}
+  .list span{color:var(--muted);font-size:15px}
+  .topics{list-style:none;margin-top:20px}
   .topics li{padding:12px 0 12px 22px;border-bottom:1px solid var(--line);position:relative}
   .topics li::before{content:"→";position:absolute;left:0;color:var(--accent)}
-  .bio{margin-top:20px;color:#c3c6c2;font-size:15.5px;margin-bottom:20px}
-  .copy{cursor:pointer;background:transparent;color:var(--ink);font:inherit;font-size:14px}
-  .contact{padding:160px 0 80px;text-align:left}
+  .bio{margin:20px 0;color:#c3c6c2;font-size:15.5px}
+  .copy{font-size:14px;padding:12px 20px}
+
+  .contact{padding:160px 0 80px}
   .contact h2{font-size:clamp(52px,10vw,148px);line-height:.9;letter-spacing:-.055em;margin:28px 0 56px}
   .contact h2 em{color:var(--accent)}
   .links{display:flex;gap:12px;flex-wrap:wrap}
@@ -117,17 +111,18 @@
 
   @media (max-width:860px){
     .wrap{padding:0 16px}
-    nav,.status{display:none}
+    nav{display:none}
     .hero{min-height:auto;padding:120px 0 40px}
+    h1 .k{display:block;font-size:12px;top:0;margin:18px 0 6px}
+    h1 .row:first-child .k{margin-top:0}
     .hero-bottom{grid-template-columns:1fr;gap:28px}
     .cta{justify-content:flex-start}
     section{padding:96px 0}
-    .head{grid-template-columns:1fr;gap:12px;margin-bottom:48px}
-    .focus{grid-template-columns:1fr}
-    .focus > div,.focus > div + div{padding:28px 0;border-right:0;border-bottom:1px solid var(--line)}
-    .project{grid-template-columns:1fr;gap:14px}
-    .bg,.trio{grid-template-columns:1fr;gap:48px}
-    .pov{margin:64px 0;padding:40px 0}
+    .head{grid-template-columns:1fr;gap:12px;margin-bottom:44px}
+    .venture{grid-template-columns:1fr;gap:14px}
+    .story,.trio{grid-template-columns:1fr;gap:48px}
+    .path li{grid-template-columns:80px 1fr}
+    .pov{margin:72px 0 64px;padding:40px 0}
     .contact{padding:110px 0 64px}
   }
   @media (prefers-reduced-motion:reduce){
@@ -140,14 +135,12 @@
 
 <header class="top">
   <div class="wrap">
-    <a class="mark" href="#">Lidija <i>Simoliūnaitė</i></a>
+    <a class="mark" href="#">Lidija <i>Simoliunaite</i></a>
     <nav>
-      <a href="#focus">Focus</a>
-      <a href="#work">Work</a>
-      <a href="#about">About</a>
+      <a href="#ventures">Ventures</a>
+      <a href="#story">Story</a>
       <a href="#contact">Contact</a>
     </nav>
-    <div class="status"><span class="dot"></span>Open to new projects</div>
   </div>
 </header>
 
@@ -155,15 +148,19 @@
   <svg id="topo" aria-hidden="true"></svg>
   <div class="wrap">
     <div class="hero-meta mono">
-      <span>Product · Data · Govtech</span>
-      <span>Lithuania — working across Europe</span>
+      <span>Founder · Product · Data</span>
+      <span>Lithuania, working across Europe</span>
     </div>
-    <h1>Making complex<br>systems <span class="s">simple</span><br>to use.</h1>
+    <h1>
+      <span class="row"><span class="k">14</span>Model.</span>
+      <span class="row"><span class="k">School</span>Developer.</span>
+      <span class="row"><span class="k">Now</span><em>Founder.</em></span>
+    </h1>
     <div class="hero-bottom">
-      <p class="lede">I build digital products where <em>data, maps and public services</em> meet. Founder of Buronia, helping people across the EU find the social benefits they are entitled to.</p>
+      <p class="lede">I'm Lidija Simoliunaite. I started working as a model at 14, wrote my first websites while still in school, and have been <em>building companies</em> ever since. Right now that's Buronia, which helps people across Europe get the public support they're entitled to.</p>
       <div class="cta">
-        <a class="btn primary" href="#contact">Let's talk <span class="arr">→</span></a>
-        <a class="btn" href="#work">See work</a>
+        <a class="btn primary" href="#ventures">See what I've built <span class="arr">→</span></a>
+        <a class="btn" href="#contact">Get in touch</a>
       </div>
     </div>
   </div>
@@ -171,88 +168,63 @@
 
 <div class="marquee" aria-hidden="true">
   <div class="track">
-    <span>Product strategy<b>✦</b></span><span>Geospatial data<b>✦</b></span><span>Agile delivery<b>✦</b></span><span>Govtech<b>✦</b></span><span>Legaltech<b>✦</b></span><span>Data platforms<b>✦</b></span>
-    <span>Product strategy<b>✦</b></span><span>Geospatial data<b>✦</b></span><span>Agile delivery<b>✦</b></span><span>Govtech<b>✦</b></span><span>Legaltech<b>✦</b></span><span>Data platforms<b>✦</b></span>
+    <span>Founder<b>✦</b></span><span>Marketplaces<b>✦</b></span><span>Govtech<b>✦</b></span><span>Data systems<b>✦</b></span><span>Product<b>✦</b></span><span>Women in tech<b>✦</b></span>
+    <span>Founder<b>✦</b></span><span>Marketplaces<b>✦</b></span><span>Govtech<b>✦</b></span><span>Data systems<b>✦</b></span><span>Product<b>✦</b></span><span>Women in tech<b>✦</b></span>
   </div>
 </div>
 
-<section id="focus">
+<section id="ventures">
   <div class="wrap">
     <div class="head reveal">
-      <span class="mono">(01) Focus</span>
-      <h2>Between users, engineers <em>and</em> decision makers.</h2>
-    </div>
-    <div class="focus reveal">
-      <div>
-        <span class="mono">A</span>
-        <h3>Product &amp; delivery</h3>
-        <p>Shaping backlogs, running sprints and keeping multiple teams aligned on what actually needs to be built.</p>
-      </div>
-      <div>
-        <span class="mono">B</span>
-        <h3>Geospatial &amp; data</h3>
-        <p>Map platforms and dashboards on ArcGIS and Databricks that turn scattered asset data into one clear picture.</p>
-      </div>
-      <div>
-        <span class="mono">C</span>
-        <h3>Govtech &amp; legaltech</h3>
-        <p>Services that make public benefits and bureaucracy understandable for the people who need them most.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="work" style="padding-top:0">
-  <div class="wrap">
-    <div class="head reveal">
-      <span class="mono">(02) Selected work</span>
-      <h2>Things I've <em>built</em> and led.</h2>
+      <span class="mono">(01) Ventures</span>
+      <h2>Things I <em>started</em>.</h2>
     </div>
     <div class="reveal">
-      <article class="project">
-        <span class="mono">01</span>
-        <h3>Buronia<small>Founder · Legaltech</small></h3>
+      <article class="venture">
+        <span class="mono now"><span class="dot"></span>Now</span>
+        <h3>Buronia<small>Founder · Govtech</small></h3>
         <div>
-          <p>A platform that helps residents and newcomers across EU countries discover which social benefits they qualify for, and guides them through applying. I lead product, go-to-market and fundraising, from Spanish market entry to an EIC Accelerator application.</p>
-          <div class="tags"><span class="tag">Product strategy</span><span class="tag">Go-to-market</span><span class="tag">Fundraising</span></div>
+          <p>A multilingual tool that turns benefit paperwork into clear next steps: who qualifies, which documents to bring, and a summary in the local language. It starts with Spain's minimum income and works in English, Spanish, French and Arabic.</p>
+          <div class="tags"><span class="tag">Product</span><span class="tag">Go-to-market</span><span class="tag">Fundraising</span></div>
+          <a class="live" href="https://buronia.com">buronia.com ↗</a>
         </div>
       </article>
-      <article class="project">
-        <span class="mono">02</span>
-        <h3>Infrastructure map platform<small>Digitalization lead · Public sector</small></h3>
+      <article class="venture">
+        <span class="mono">Helsinki</span>
+        <h3>Wardrobers<small>Startup · Clothing rental marketplace</small></h3>
         <div>
-          <p>A web map platform bringing a national infrastructure network's asset data together from a central data warehouse, with labelling standards, documentation and a live statistics dashboard. I own the backlog and coordinate data, GIS and business teams.</p>
-          <div class="tags"><span class="tag">ArcGIS</span><span class="tag">Databricks</span><span class="tag">Scrum</span></div>
+          <p>A peer-to-peer rental platform where people rent out the clothes already hanging in their wardrobes. It was created during the University of Helsinki pre-incubator, where fashion met marketplace building.</p>
+          <div class="tags"><span class="tag">Marketplace</span><span class="tag">Circular fashion</span><span class="tag">Incubator</span></div>
         </div>
       </article>
-      <article class="project">
-        <span class="mono">03</span>
-        <h3>Classification crosswalk<small>Data standards</small></h3>
+      <article class="venture">
+        <span class="mono">Finland</span>
+        <h3>Restaurant loyalty app<small>Venture · Hospitality</small></h3>
         <div>
-          <p>Mapping legacy object classification codes onto a modern asset data model, so decades of documentation can be reused instead of rebuilt.</p>
-          <div class="tags"><span class="tag">Data modelling</span><span class="tag">Research</span></div>
+          <p>A loyalty programme app built with local restaurants in Finland, giving small places the kind of repeat-customer tools usually only big chains have.</p>
+          <div class="tags"><span class="tag">Mobile app</span><span class="tag">B2B sales</span><span class="tag">Hospitality</span></div>
         </div>
       </article>
     </div>
   </div>
 </section>
 
-<section id="about" style="padding-top:0">
+<section id="story" style="padding-top:0">
   <div class="wrap">
     <div class="head reveal">
-      <span class="mono">(03) About</span>
-      <h2>From castings at 14 <em>to</em> building govtech.</h2>
+      <span class="mono">(02) Story</span>
+      <h2>A non-linear <em>path</em> into tech.</h2>
     </div>
-    <div class="bg reveal">
-      <p class="big">I grew up in a small town in northern Lithuania and started working abroad as a model at 14. Then came software studies in Finland, startups, and public-sector data. Everywhere I moved, the hardest part was never the work. <em>It was the paperwork.</em> Buronia is the tool I wish I'd had.</p>
-      <dl class="facts">
-        <div><dt>Now</dt><dd>Founder, Buronia</dd></div>
-        <div><dt>Also</dt><dd>Digitalization &amp; agile delivery, public sector</dd></div>
-        <div><dt>Studied</dt><dd>Software development, HAMK (Finland)</dd></div>
-        <div><dt>Startup training</dt><dd>University of Helsinki pre-incubator</dd></div>
-        <div><dt>Based</dt><dd>Lithuania · working across Europe</dd></div>
-        <div><dt>Languages</dt><dd>Lithuanian · English</dd></div>
-      </dl>
+    <div class="story reveal">
+      <p class="big">I grew up in a small town in northern Lithuania and was working abroad as a model by 14. Fashion taught me to walk into rooms full of strangers in a new country and make it work. Tech gave me a way to <em>build things that last</em>. I've been combining the two ever since.</p>
+      <ol class="path">
+        <li><span class="yr">Age 14</span><div><b>International model</b><span>Working internationally, and still modelling today</span></div></li>
+        <li><span class="yr">2018</span><div><b>Web developer, during school</b><span>First tech job: building websites for my home town's administration</span></div></li>
+        <li><span class="yr">Finland</span><div><b>Software development, HAMK</b><span>Plus the University of Helsinki pre-incubator</span></div></li>
+        <li><span class="yr">2021</span><div><b>Data analyst, Enterprise Estonia</b><span>Financial data behind budget decisions</span></div></li>
+        <li><span class="yr">2023–24</span><div><b>System engineer, Neste</b><span>Real-time production data systems and KPI dashboards</span></div></li>
+        <li><span class="yr">2026</span><div><b>Founder, Buronia</b><span>Making public support understandable</span></div></li>
+      </ol>
     </div>
 
     <blockquote class="pov reveal">
@@ -263,26 +235,25 @@
     <div class="trio reveal">
       <div>
         <span class="mono">Community</span>
-        <ul class="timeline">
+        <ul class="list">
           <li><b>Slush</b><span>Group lead, team of 7 volunteers · 2021</span></li>
           <li><b>Latitude59</b><span>Volunteer · 2022</span></li>
-          <li><b>Slush</b><span>Information specialist · 2019</span></li>
-          <li><b>Pasvalys local administration</b><span>Web developer, first tech job · 2018</span></li>
+          <li><b>Slush</b><span>Info team · 2019</span></li>
+          <li><b>Women in tech</b><span>Building a community in Warsaw · soon</span></li>
         </ul>
       </div>
       <div>
         <span class="mono">Talks &amp; writing</span>
-        <p class="note">Open to speaking and guest writing on:</p>
         <ul class="topics">
-          <li>Public services people can actually use</li>
+          <li>From model to founder</li>
+          <li>Building marketplaces from zero</li>
           <li>Multilingual govtech for newcomers in Europe</li>
-          <li>Data platforms in the public sector</li>
-          <li>From model to founder: a non-linear path into tech</li>
+          <li>Women founders in Central and Eastern Europe</li>
         </ul>
       </div>
       <div>
         <span class="mono">Short bio</span>
-        <p class="bio" id="bio">Lidija Simoliūnaitė is a Lithuanian founder and product professional. She leads Buronia, a multilingual tool that helps people across Europe understand and prepare applications for benefits, grants and other public support. She studied software development at HAMK in Finland, took part in the University of Helsinki pre-incubator, and works on digitalization and agile delivery of geospatial data platforms in the public sector. Before tech, she worked internationally as a model from the age of 14.</p>
+        <p class="bio" id="bio">Lidija Simoliunaite is a Lithuanian founder. She leads Buronia, a multilingual tool that helps people across Europe understand and prepare applications for public support. She started modelling internationally at 14 and took her first web developer job while still in school. She studied software development at HAMK in Finland, helped create the clothing rental marketplace Wardrobers in the University of Helsinki pre-incubator, and built a loyalty app for local restaurants. She has also worked with real-time production data as a system engineer at Neste.</p>
         <button class="btn copy" id="copyBio" type="button">Copy bio</button>
       </div>
     </div>
@@ -291,10 +262,11 @@
 
 <section id="contact" class="contact">
   <div class="wrap">
-    <span class="mono">(04) Contact</span>
-    <h2>Let's build<br>something <em style="font-family:var(--serif);font-weight:400">useful.</em></h2>
+    <span class="mono">(03) Contact</span>
+    <h2>Let's build<br>something <em>together.</em></h2>
     <div class="links">
       <a class="btn primary" href="https://www.linkedin.com/in/lidija-simo/">LinkedIn <span class="arr">↗</span></a>
+      <a class="btn" href="https://buronia.com">Buronia <span class="arr">↗</span></a>
       <a class="btn" href="https://github.com/lidijasimoliunaite">GitHub <span class="arr">↗</span></a>
     </div>
   </div>
@@ -302,63 +274,39 @@
 
 <footer>
   <div class="wrap mono">
-    <span>© 2026 Lidija Simoliūnaitė</span>
+    <span>© 2026 Lidija Simoliunaite</span>
     <span id="clock">Vilnius</span>
   </div>
 </footer>
 
 <script>
-// topographic contour background
 (function(){
-  const svg=document.getElementById('topo');
-  const NS='http://www.w3.org/2000/svg';
-  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const rings=[];
+  const svg=document.getElementById('topo');const NS='http://www.w3.org/2000/svg';
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;const rings=[];
   function build(){
-    svg.innerHTML='';rings.length=0;
-    const w=svg.clientWidth,h=svg.clientHeight;
+    svg.innerHTML='';rings.length=0;const w=svg.clientWidth,h=svg.clientHeight;
     svg.setAttribute('viewBox',`0 0 ${w} ${h}`);
-    const centers=[[w*.78,h*.28,15],[w*.18,h*.12,8]];
-    centers.forEach(([cx,cy,n],ci)=>{
-      for(let i=1;i<=n;i++){
-        const p=document.createElementNS(NS,'path');
-        p.setAttribute('fill','none');
-        p.setAttribute('stroke',i%5===0?'#c6f36b':'#3a423f');
-        p.setAttribute('stroke-width',i%5===0?'1.2':'1');
-        svg.appendChild(p);
-        rings.push({p,cx,cy,r:i*Math.min(w,h)*.055,seed:ci*10+i});
-      }
-    });
-    draw(0);
+    [[w*.8,h*.26,14],[w*.15,h*.1,7]].forEach(([cx,cy,n],ci)=>{
+      for(let i=1;i<=n;i++){const p=document.createElementNS(NS,'path');p.setAttribute('fill','none');
+        p.setAttribute('stroke',i%5===0?'#c6f36b':'#3a423f');p.setAttribute('stroke-width',i%5===0?'1.2':'1');
+        svg.appendChild(p);rings.push({p,cx,cy,r:i*Math.min(w,h)*.055,seed:ci*10+i});}
+    });draw(0);
   }
-  function draw(t){
-    rings.forEach(({p,cx,cy,r,seed})=>{
-      let d='';const N=90;
-      for(let k=0;k<=N;k++){
-        const a=k/N*Math.PI*2;
-        const rr=r*(1+.12*Math.sin(3*a+seed*.4+t)+.07*Math.sin(5*a-seed*.3+t*.7)+.04*Math.cos(2*a+t*1.3));
-        d+=(k?'L':'M')+(cx+rr*Math.cos(a)).toFixed(1)+' '+(cy+rr*.8*Math.sin(a)).toFixed(1);
-      }
-      p.setAttribute('d',d+'Z');
-    });
-  }
+  function draw(t){rings.forEach(({p,cx,cy,r,seed})=>{let d='';const N=90;
+    for(let k=0;k<=N;k++){const a=k/N*Math.PI*2;
+      const rr=r*(1+.12*Math.sin(3*a+seed*.4+t)+.07*Math.sin(5*a-seed*.3+t*.7)+.04*Math.cos(2*a+t*1.3));
+      d+=(k?'L':'M')+(cx+rr*Math.cos(a)).toFixed(1)+' '+(cy+rr*.8*Math.sin(a)).toFixed(1);}
+    p.setAttribute('d',d+'Z');});}
   build();addEventListener('resize',build);
   if(!reduce){let t=0;(function loop(){t+=.0025;draw(t);requestAnimationFrame(loop)})();}
 })();
-
-// copy bio
-document.getElementById('copyBio').addEventListener('click',e=>{const t=document.getElementById('bio').textContent;const b=e.currentTarget;const done=()=>{b.textContent='Copied';setTimeout(()=>b.textContent='Copy bio',1800)};try{navigator.clipboard.writeText(t).then(done).catch(()=>{})}catch(err){}});
-
-// reveal on scroll
+document.getElementById('copyBio').addEventListener('click',e=>{const t=document.getElementById('bio').textContent;const b=e.currentTarget;
+  try{navigator.clipboard.writeText(t).then(()=>{b.textContent='Copied';setTimeout(()=>b.textContent='Copy bio',1800)}).catch(()=>{})}catch(err){}});
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-
-// local time
-(function(){
-  const el=document.getElementById('clock');
+(function(){const el=document.getElementById('clock');
   function tick(){try{el.textContent='Vilnius '+new Date().toLocaleTimeString('en-GB',{timeZone:'Europe/Vilnius',hour:'2-digit',minute:'2-digit'})}catch(e){}}
-  tick();setInterval(tick,30000);
-})();
+  tick();setInterval(tick,30000);})();
 </script>
 </body>
 </html>
