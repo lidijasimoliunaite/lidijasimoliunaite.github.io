@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lidija Simoliunaite</title>
-<meta name="description" content="Lidija Simoliunaite: founder of Buronia. Model at 14, web developer in school, building startups since.">
+<meta name="description" content="Lidija Simoliunaite: founder of Buronia, helping startups find and win EU grants. Model since 14, web developer in school, building startups since.">
 <meta property="og:title" content="Lidija Simoliunaite">
-<meta property="og:description" content="Founder of Buronia, helping startups win EU grants. Model at 14, web developer in school, building startups since.">
+<meta property="og:description" content="Founder of Buronia, helping startups find and win EU grants. Model since 14, web developer in school, building startups since.">
 <meta property="og:type" content="profile">
 <meta property="og:url" content="https://lidijasimoliunaite.github.io/">
 <meta property="og:image" content="https://lidijasimoliunaite.github.io/og.png">
@@ -16,308 +16,183 @@
 <meta name="twitter:image" content="https://lidijasimoliunaite.github.io/og.png">
 <link rel="canonical" href="https://lidijasimoliunaite.github.io/">
 <meta name="author" content="Lidija Simoliunaite">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"ProfilePage","url":"https://lidijasimoliunaite.github.io/","mainEntity":{"@type":"Person","name":"Lidija Simoliunaite","url":"https://lidijasimoliunaite.github.io/","image":"https://lidijasimoliunaite.github.io/og.png","jobTitle":"Founder","worksFor":{"@type":"Organization","name":"Buronia","url":"https://buronia.com"},"nationality":"Lithuanian","alumniOf":{"@type":"CollegeOrUniversity","name":"HAMK Hame University of Applied Sciences"},"knowsAbout":["EU grants","Innovation funding","Startups","Product management","Data systems","Marketplaces"],"sameAs":["https://www.linkedin.com/in/lidija-simo/","https://github.com/lidijasimoliunaite","https://www.linkedin.com/company/buronia/"]}}
 </script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --bg:#0c0e0e; --bg2:#131616; --ink:#f1efe8; --muted:#8e9491; --line:#242928;
-    --accent:#c6f36b; --accent-ink:#0c0e0e;
-    --serif:"Instrument Serif",Georgia,serif; --sans:"Inter Tight",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
-  a{color:inherit;text-decoration:none}
-  ::selection{background:var(--accent);color:var(--accent-ink)}
-  .wrap{max-width:1180px;margin:0 auto;padding:0 32px}
-  .mono{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-  em{font-family:var(--serif);font-style:italic;font-weight:400}
+:root{
+  --paper:#ffffff;
+  --ink:#1b1f2b;
+  --muted:#636978;
+  --line:#e5e7eb;
+  --blue:#2443b5;
+  --wrap:1080px;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--paper:#15171d;--ink:#eceef2;--muted:#9aa0ad;--line:#2a2e37;--blue:#8fa4ff}
+}
+:root[data-theme="dark"]{--paper:#15171d;--ink:#eceef2;--muted:#9aa0ad;--line:#2a2e37;--blue:#8fa4ff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:"Hanken Grotesk",system-ui,sans-serif;font-size:18px;line-height:1.6;font-weight:400}
+a{color:var(--blue);text-decoration:none;border-bottom:1px solid transparent}
+a:hover{border-bottom-color:currentColor}
+a:focus-visible,button:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 32px}
 
-  header.top{position:fixed;inset:0 0 auto 0;z-index:10;backdrop-filter:blur(12px);background:color-mix(in srgb,var(--bg) 70%,transparent);border-bottom:1px solid var(--line)}
-  header.top .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
-  .mark{font-weight:600;letter-spacing:-.01em}
-  .mark i{font-family:var(--serif);font-weight:400;color:var(--accent)}
-  nav{display:flex;gap:28px}
-  nav a{font-size:14px;color:var(--muted);transition:color .2s}
-  nav a:hover{color:var(--ink)}
+header.top{display:flex;justify-content:space-between;align-items:baseline;padding:28px 0;font-size:15px}
+header.top nav{display:flex;gap:28px}
+header.top nav a{color:var(--muted)}
+header.top nav a:hover{color:var(--ink)}
+.home{color:var(--ink);font-weight:500}
 
-  .hero{position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;padding:120px 0 56px;overflow:hidden}
-  #topo{position:absolute;inset:0;width:100%;height:100%;opacity:.5;pointer-events:none}
-  .hero .wrap{position:relative;width:100%}
-  .hero-meta{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:36px}
-  h1{font-weight:600;font-size:clamp(48px,9.6vw,148px);line-height:.92;letter-spacing:-.055em}
-  h1 .row{display:block}
-  h1 .k{font-family:var(--mono);font-size:.16em;letter-spacing:.06em;font-weight:500;color:var(--muted);vertical-align:top;margin-right:.6em;position:relative;top:.9em}
-  h1 em{color:var(--accent);letter-spacing:-.02em}
-  .hero-bottom{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:end;margin-top:52px;padding-top:28px;border-top:1px solid var(--line)}
-  .lede{font-size:clamp(18px,1.8vw,22px);line-height:1.45;color:#cfd2cd;max-width:36ch}
-  .lede em{font-size:1.15em;color:var(--ink)}
-  .cta{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}
-  .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;font-size:15px;font-weight:500;border:1px solid var(--line);transition:transform .2s,border-color .2s;background:transparent;color:var(--ink);font-family:inherit;cursor:pointer}
-  .btn:hover{transform:translateY(-2px);border-color:var(--muted)}
-  .btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
-  .btn .arr{transition:transform .2s}
-  .btn:hover .arr{transform:translateX(3px)}
+.hero{padding:12vh 0 9vh}
+.hero h1{font-weight:300;font-size:clamp(52px,10.4vw,132px);line-height:.92;letter-spacing:-.045em;margin-left:-.04em}
+.hero .role{margin-top:36px;font-size:22px;font-weight:500;letter-spacing:-.01em}
+.hero .intro{margin-top:14px;max-width:34em;color:var(--muted);font-size:20px;line-height:1.55}
+.hero .links{margin-top:32px;display:flex;flex-wrap:wrap;gap:12px 28px;font-size:17px}
 
-  .marquee{border-block:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:22px 0;background:var(--bg2)}
-  .marquee .track{display:inline-block;animation:scroll 42s linear infinite}
-  .marquee span{font-family:var(--serif);font-size:clamp(26px,3.4vw,40px);margin-right:48px;color:var(--muted)}
-  .marquee span b{font-weight:400;color:var(--accent);margin-left:48px}
-  @keyframes scroll{to{transform:translateX(-50%)}}
+section{padding:72px 0;border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:220px 1fr;gap:24px 48px}
+h2{font-size:15px;font-weight:600;letter-spacing:.01em}
+.side{color:var(--muted);font-size:15px}
 
-  section{padding:140px 0}
-  .head{display:grid;grid-template-columns:220px 1fr;gap:32px;margin-bottom:64px}
-  h2{font-weight:600;font-size:clamp(36px,5vw,64px);line-height:1;letter-spacing:-.04em}
+.venture + .venture{margin-top:48px}
+.venture h3{font-size:30px;font-weight:400;letter-spacing:-.02em;line-height:1.2}
+.venture .what{color:var(--muted);font-size:16px;margin-top:4px}
+.venture p{margin-top:14px;max-width:36em}
+.venture .go{display:inline-block;margin-top:12px;font-size:16px}
 
-  .venture{display:grid;grid-template-columns:110px 1fr 1.1fr;gap:32px;padding:44px 0;border-top:1px solid var(--line);position:relative}
-  .venture:last-child{border-bottom:1px solid var(--line)}
-  .venture::before{content:"";position:absolute;left:0;top:-1px;height:1px;width:0;background:var(--accent);transition:width .5s}
-  .venture:hover::before{width:100%}
-  .venture h3{font-size:clamp(28px,3.2vw,42px);font-weight:600;letter-spacing:-.03em;line-height:1.05}
-  .venture h3 small{display:block;font-size:15px;font-weight:400;letter-spacing:0;color:var(--muted);margin-top:10px}
-  .venture p{color:#c3c6c2}
-  .venture .live{display:inline-flex;align-items:center;gap:8px;margin-top:20px;font-size:14px;color:var(--accent)}
-  .venture .live:hover{text-decoration:underline}
-  .now{display:inline-flex;align-items:center;gap:8px;color:var(--accent)}
-  .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:pulse 2.4s infinite}
-  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(198,243,107,.5)}70%{box-shadow:0 0 0 10px rgba(198,243,107,0)}100%{box-shadow:0 0 0 0 rgba(198,243,107,0)}}
-  .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
-  .tag{font-family:var(--mono);font-size:11.5px;letter-spacing:.04em;padding:6px 10px;border:1px solid var(--line);border-radius:6px;color:var(--muted)}
+.path{list-style:none}
+.path li{display:grid;grid-template-columns:110px 1fr;gap:24px;padding:14px 0}
+.path li + li{border-top:1px solid var(--line)}
+.path .when{color:var(--muted);font-size:16px;font-variant-numeric:tabular-nums;padding-top:2px}
+.path .title{font-weight:500}
+.path .note{color:var(--muted);font-size:16px}
 
-  .story{display:grid;grid-template-columns:1.05fr 1fr;gap:80px;align-items:start}
-  .story p.big{font-family:var(--serif);font-size:clamp(28px,3.2vw,40px);line-height:1.2}
-  .story p.big em{color:var(--accent)}
-  .path{list-style:none;border-top:1px solid var(--line)}
-  .path li{display:grid;grid-template-columns:96px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--line)}
-  .path .yr{font-family:var(--mono);font-size:13px;color:var(--accent);padding-top:3px}
-  .path b{font-weight:600;display:block}
-  .path span{color:var(--muted);font-size:15px}
+.lede{font-size:26px;line-height:1.45;font-weight:300;letter-spacing:-.01em;max-width:28em}
 
-  .pov{margin:110px 0 96px;padding:56px 0;border-block:1px solid var(--line)}
-  .pov p{font-family:var(--serif);font-size:clamp(32px,4.6vw,60px);line-height:1.1;letter-spacing:-.01em;margin-top:20px;max-width:24ch}
-  .trio{display:grid;grid-template-columns:1fr 1fr 1.2fr;gap:56px}
-  .list{list-style:none;margin-top:20px}
-  .list li{padding:14px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column}
-  .list b{font-weight:600}
-  .list span{color:var(--muted);font-size:15px}
-  .topics{list-style:none;margin-top:20px}
-  .topics li{padding:12px 0 12px 22px;border-bottom:1px solid var(--line);position:relative}
-  .topics li::before{content:"→";position:absolute;left:0;color:var(--accent)}
-  .bio{margin:20px 0;color:#c3c6c2;font-size:15.5px}
-  .copy{font-size:14px;padding:12px 20px}
+.plain{list-style:none}
+.plain li{padding:6px 0}
+.plain li + li{margin-top:6px}
+.plain .note{display:block;color:var(--muted);font-size:16px}
 
-  .contact{padding:160px 0 80px}
-  .contact h2{font-size:clamp(52px,10vw,148px);line-height:.9;letter-spacing:-.055em;margin:28px 0 56px}
-  .contact h2 em{color:var(--accent)}
-  .links{display:flex;gap:12px;flex-wrap:wrap}
-  footer{border-top:1px solid var(--line);padding:28px 0 40px}
-  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.bio p{max-width:36em}
+.copy{margin-top:20px;font:inherit;font-size:15px;font-weight:500;color:var(--ink);background:none;border:1px solid var(--line);border-radius:999px;padding:8px 18px;cursor:pointer}
+.copy:hover{border-color:var(--ink)}
 
-  .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
-  .reveal.in{opacity:1;transform:none}
+.contact .big{font-size:clamp(28px,4vw,44px);font-weight:300;letter-spacing:-.025em;line-height:1.2}
+.contact .links{margin-top:24px;display:flex;flex-wrap:wrap;gap:12px 28px}
 
-  @media (max-width:860px){
-    .wrap{padding:0 16px}
-    nav{display:none}
-    .hero{min-height:auto;padding:120px 0 40px}
-    h1 .k{display:block;font-size:12px;top:0;margin:18px 0 6px}
-    h1 .row:first-child .k{margin-top:0}
-    .hero-bottom{grid-template-columns:1fr;gap:28px}
-    .cta{justify-content:flex-start}
-    section{padding:96px 0}
-    .head{grid-template-columns:1fr;gap:12px;margin-bottom:44px}
-    .venture{grid-template-columns:1fr;gap:14px}
-    .story,.trio{grid-template-columns:1fr;gap:48px}
-    .path li{grid-template-columns:80px 1fr}
-    .pov{margin:72px 0 64px;padding:40px 0}
-    .contact{padding:110px 0 64px}
-  }
-  @media (prefers-reduced-motion:reduce){
-    .marquee .track,.dot{animation:none}
-    .reveal{opacity:1;transform:none;transition:none}
-  }
+footer{padding:40px 0 56px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+
+@media (max-width:760px){
+  body{font-size:17px}
+  .wrap{padding:0 20px}
+  header.top nav{gap:18px}
+  .hero{padding:8vh 0 7vh}
+  .hero .role{font-size:20px}
+  .hero .intro{font-size:18px}
+  section{padding:52px 0}
+  .row{grid-template-columns:1fr;gap:20px}
+  .venture h3{font-size:26px}
+  .path li{grid-template-columns:76px 1fr;gap:16px}
+  .lede{font-size:22px}
+}
 </style>
 </head>
 <body>
+<div class="wrap">
+  <header class="top">
+    <a class="home" href="#">Lidija Simoliunaite</a>
+    <nav aria-label="Sections"><a href="#work">Work</a><a href="#path">Path</a><a href="#contact">Contact</a></nav>
+  </header>
 
-<header class="top">
-  <div class="wrap">
-    <a class="mark" href="#">Lidija <i>Simoliunaite</i></a>
-    <nav>
-      <a href="#ventures">Ventures</a>
-      <a href="#story">Story</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<div class="hero">
-  <svg id="topo" aria-hidden="true"></svg>
-  <div class="wrap">
-    <div class="hero-meta mono">
-      <span>Founder · Product · Data</span>
-      <span>Lithuania, working across Europe</span>
+  <main>
+    <div class="hero">
+      <h1>Lidija<br>Simoliunaite</h1>
+      <p class="role">Founder of Buronia</p>
+      <p class="intro">I help startups and small companies find the EU and national grants that fit them. Before that: model from 14, web developer while still in school, data and systems work in Finland, and two startups of my own.</p>
+      <p class="links"><a href="https://buronia.com">buronia.com</a><a href="https://www.linkedin.com/in/lidija-simo/">LinkedIn</a><a href="mailto:hello@buronia.com">hello@buronia.com</a></p>
     </div>
-    <h1>
-      <span class="row"><span class="k">14</span>Model.</span>
-      <span class="row"><span class="k">School</span>Developer.</span>
-      <span class="row"><span class="k">Now</span><em>Founder.</em></span>
-    </h1>
-    <div class="hero-bottom">
-      <p class="lede">I'm Lidija Simoliunaite. I started working as a model at 14, wrote my first websites while still in school, and have been <em>building companies</em> ever since. Right now that's Buronia, which helps startups and small companies find and win EU grants.</p>
-      <div class="cta">
-        <a class="btn primary" href="#ventures">See what I've built <span class="arr">→</span></a>
-        <a class="btn" href="#contact">Get in touch</a>
+
+    <section id="work" class="row">
+      <h2>Work</h2>
+      <div>
+        <article class="venture">
+          <h3>Buronia</h3>
+          <p class="what">Founder, since 2026</p>
+          <p>Buronia helps startups and small companies in Lithuania, Latvia, Estonia and Finland find the EU and national grants that fit them, and turns each call into clear next steps: who qualifies, what the funder wants to see and which documents to prepare.</p>
+          <a class="go" href="https://buronia.com">Try the free grant check</a>
+        </article>
+        <article class="venture">
+          <h3>Wardrobers</h3>
+          <p class="what">Clothing rental marketplace, University of Helsinki pre-incubator</p>
+          <p>A peer-to-peer platform where people rent out the clothes already hanging in their wardrobes.</p>
+        </article>
+        <article class="venture">
+          <h3>Restaurant loyalty app</h3>
+          <p class="what">Finland</p>
+          <p>A loyalty programme built with local restaurants, giving small places the repeat-customer tools usually only big chains have.</p>
+        </article>
       </div>
-    </div>
-  </div>
-</div>
+    </section>
 
-<div class="marquee" aria-hidden="true">
-  <div class="track">
-    <span>Founder<b>✦</b></span><span>Marketplaces<b>✦</b></span><span>EU grants<b>✦</b></span><span>Data systems<b>✦</b></span><span>Product<b>✦</b></span><span>Women in tech<b>✦</b></span>
-    <span>Founder<b>✦</b></span><span>Marketplaces<b>✦</b></span><span>EU grants<b>✦</b></span><span>Data systems<b>✦</b></span><span>Product<b>✦</b></span><span>Women in tech<b>✦</b></span>
-  </div>
-</div>
-
-<section id="ventures">
-  <div class="wrap">
-    <div class="head reveal">
-      <span class="mono">(01) Ventures</span>
-      <h2>Things I <em>started</em>.</h2>
-    </div>
-    <div class="reveal">
-      <article class="venture">
-        <span class="mono now"><span class="dot"></span>Now</span>
-        <h3>Buronia<small>Founder · EU grants</small></h3>
-        <div>
-          <p>Helps startups and small companies find the EU and national grants that fit them, and turns each call into clear next steps: who qualifies, what the funder wants to see, and which documents to prepare. It starts with Lithuania, Latvia, Estonia and Finland.</p>
-          <div class="tags"><span class="tag">Product</span><span class="tag">Go-to-market</span><span class="tag">Fundraising</span></div>
-          <a class="live" href="https://buronia.com">buronia.com ↗</a>
-        </div>
-      </article>
-      <article class="venture">
-        <span class="mono">Helsinki</span>
-        <h3>Wardrobers<small>Startup · Clothing rental marketplace</small></h3>
-        <div>
-          <p>A peer-to-peer rental platform where people rent out the clothes already hanging in their wardrobes. It was created during the University of Helsinki pre-incubator, where fashion met marketplace building.</p>
-          <div class="tags"><span class="tag">Marketplace</span><span class="tag">Circular fashion</span><span class="tag">Incubator</span></div>
-        </div>
-      </article>
-      <article class="venture">
-        <span class="mono">Finland</span>
-        <h3>Restaurant loyalty app<small>Venture · Hospitality</small></h3>
-        <div>
-          <p>A loyalty programme app built with local restaurants in Finland, giving small places the kind of repeat-customer tools usually only big chains have.</p>
-          <div class="tags"><span class="tag">Mobile app</span><span class="tag">B2B sales</span><span class="tag">Hospitality</span></div>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="story" style="padding-top:0">
-  <div class="wrap">
-    <div class="head reveal">
-      <span class="mono">(02) Story</span>
-      <h2>A non-linear <em>path</em> into tech.</h2>
-    </div>
-    <div class="story reveal">
-      <p class="big">I grew up in a small town in northern Lithuania and was working abroad as a model by 14. Fashion taught me to walk into rooms full of strangers in a new country and make it work. Tech gave me a way to <em>build things that last</em>. I've been combining the two ever since.</p>
+    <section id="path" class="row">
+      <h2>Path</h2>
       <ol class="path">
-        <li><span class="yr">Age 14</span><div><b>International model</b><span>Working internationally, and still modelling today</span></div></li>
-        <li><span class="yr">2018</span><div><b>Web developer, during school</b><span>First tech job: building websites for my home town's administration</span></div></li>
-        <li><span class="yr">Finland</span><div><b>Software development, HAMK</b><span>Plus the University of Helsinki pre-incubator</span></div></li>
-        <li><span class="yr">2021</span><div><b>Data analyst, Enterprise Estonia</b><span>Financial data behind budget decisions at Estonia's business support agency</span></div></li>
-        <li><span class="yr">2023–24</span><div><b>System engineer, Neste</b><span>Real-time production data systems and KPI dashboards</span></div></li>
-        <li><span class="yr">2026</span><div><b>Founder, Buronia</b><span>Helping startups find and win EU grants</span></div></li>
+        <li><span class="when">Age 14</span><div><div class="title">Model</div><div class="note">Working internationally, and still modelling today</div></div></li>
+        <li><span class="when">2018</span><div><div class="title">Web developer</div><div class="note">First tech job while still in school, building websites for my home town's administration</div></div></li>
+        <li><span class="when">2019–22</span><div><div class="title">Software development, HAMK</div><div class="note">Studies in Finland, plus the University of Helsinki pre-incubator</div></div></li>
+        <li><span class="when">2021</span><div><div class="title">Data analyst, Enterprise Estonia</div><div class="note">Financial data behind budget decisions at Estonia's business and innovation agency</div></div></li>
+        <li><span class="when">2023–24</span><div><div class="title">System engineer, Neste</div><div class="note">Real-time production data systems and KPI dashboards</div></div></li>
+        <li><span class="when">2026</span><div><div class="title">Founder, Buronia</div><div class="note">EU and national grants for startups</div></div></li>
       </ol>
-    </div>
+    </section>
 
-    <blockquote class="pov reveal">
-      <span class="mono">Point of view</span>
-      <p>“Winning public funding is often less about having a good project and more about understanding the paperwork.”</p>
-    </blockquote>
+    <section class="row">
+      <h2>What I believe</h2>
+      <p class="lede">Winning public funding is often less about having a good project and more about understanding the paperwork.</p>
+    </section>
 
-    <div class="trio reveal">
+    <section class="row">
+      <h2>Community</h2>
+      <ul class="plain">
+        <li>Slush, Helsinki <span class="note">group lead for a team of 7 volunteers, 2021</span></li>
+        <li>Latitude59, Tallinn <span class="note">volunteer, 2022</span></li>
+        <li>Slush, Helsinki <span class="note">volunteer, 2019</span></li>
+        <li>Women in tech, Warsaw <span class="note">building a community, in progress</span></li>
+      </ul>
+    </section>
+
+    <section class="row bio">
+      <h2>Short bio</h2>
       <div>
-        <span class="mono">Community</span>
-        <ul class="list">
-          <li><b>Slush</b><span>Group lead, team of 7 volunteers · 2021</span></li>
-          <li><b>Latitude59</b><span>Volunteer · 2022</span></li>
-          <li><b>Slush</b><span>Info team · 2019</span></li>
-          <li><b>Women in tech</b><span>Building a community in Warsaw · soon</span></li>
-        </ul>
+        <p id="bio">Lidija Simoliunaite is a Lithuanian founder. She leads Buronia, which helps startups and small companies in Lithuania, Latvia, Estonia and Finland find and win EU and national innovation grants. She started modelling internationally at 14 and took her first web developer job while still in school. She studied software development at HAMK in Finland, created the clothing rental marketplace Wardrobers in the University of Helsinki pre-incubator, and built a loyalty app for local restaurants. She has analysed the financial data behind budget decisions at Enterprise Estonia and worked with real-time production data as a system engineer at Neste.</p>
+        <button class="copy" type="button" id="copy">Copy bio</button>
       </div>
+    </section>
+
+    <section id="contact" class="row contact">
+      <h2>Contact</h2>
       <div>
-        <span class="mono">Talks &amp; writing</span>
-        <ul class="topics">
-          <li>From model to founder</li>
-          <li>Building marketplaces from zero</li>
-          <li>EU grants for early-stage startups</li>
-          <li>Women founders in Central and Eastern Europe</li>
-        </ul>
+        <p class="big">For grants, partnerships or a coffee, write to <a href="mailto:hello@buronia.com">hello@buronia.com</a></p>
+        <p class="links"><a href="https://www.linkedin.com/in/lidija-simo/">LinkedIn</a><a href="https://buronia.com">Buronia</a><a href="https://github.com/lidijasimoliunaite">GitHub</a></p>
       </div>
-      <div>
-        <span class="mono">Short bio</span>
-        <p class="bio" id="bio">Lidija Simoliunaite is a Lithuanian founder. She leads Buronia, which helps startups and small companies in Lithuania, Latvia, Estonia and Finland find and win EU and national innovation grants. She started modelling internationally at 14 and took her first web developer job while still in school. She studied software development at HAMK in Finland, helped create the clothing rental marketplace Wardrobers in the University of Helsinki pre-incubator, and built a loyalty app for local restaurants. She has also analysed the financial data behind budget decisions at Enterprise Estonia and worked with real-time production data as a system engineer at Neste.</p>
-        <button class="btn copy" id="copyBio" type="button">Copy bio</button>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
+  </main>
 
-<section id="contact" class="contact">
-  <div class="wrap">
-    <span class="mono">(03) Contact</span>
-    <h2>Let's build<br>something <em>together.</em></h2>
-    <div class="links">
-      <a class="btn primary" href="https://www.linkedin.com/in/lidija-simo/">LinkedIn <span class="arr">↗</span></a>
-      <a class="btn" href="https://buronia.com">Buronia <span class="arr">↗</span></a>
-      <a class="btn" href="https://github.com/lidijasimoliunaite">GitHub <span class="arr">↗</span></a>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap mono">
-    <span>© 2026 Lidija Simoliunaite</span>
-    <span id="clock">Vilnius</span>
-  </div>
-</footer>
-
+  <footer>© 2026 Lidija Simoliunaite</footer>
+</div>
 <script>
-(function(){
-  const svg=document.getElementById('topo');const NS='http://www.w3.org/2000/svg';
-  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;const rings=[];
-  function build(){
-    svg.innerHTML='';rings.length=0;const w=svg.clientWidth,h=svg.clientHeight;
-    svg.setAttribute('viewBox',`0 0 ${w} ${h}`);
-    [[w*.8,h*.26,14],[w*.15,h*.1,7]].forEach(([cx,cy,n],ci)=>{
-      for(let i=1;i<=n;i++){const p=document.createElementNS(NS,'path');p.setAttribute('fill','none');
-        p.setAttribute('stroke',i%5===0?'#c6f36b':'#3a423f');p.setAttribute('stroke-width',i%5===0?'1.2':'1');
-        svg.appendChild(p);rings.push({p,cx,cy,r:i*Math.min(w,h)*.055,seed:ci*10+i});}
-    });draw(0);
-  }
-  function draw(t){rings.forEach(({p,cx,cy,r,seed})=>{let d='';const N=90;
-    for(let k=0;k<=N;k++){const a=k/N*Math.PI*2;
-      const rr=r*(1+.12*Math.sin(3*a+seed*.4+t)+.07*Math.sin(5*a-seed*.3+t*.7)+.04*Math.cos(2*a+t*1.3));
-      d+=(k?'L':'M')+(cx+rr*Math.cos(a)).toFixed(1)+' '+(cy+rr*.8*Math.sin(a)).toFixed(1);}
-    p.setAttribute('d',d+'Z');});}
-  build();addEventListener('resize',build);
-  if(!reduce){let t=0;(function loop(){t+=.0025;draw(t);requestAnimationFrame(loop)})();}
-})();
-document.getElementById('copyBio').addEventListener('click',e=>{const t=document.getElementById('bio').textContent;const b=e.currentTarget;
-  try{navigator.clipboard.writeText(t).then(()=>{b.textContent='Copied';setTimeout(()=>b.textContent='Copy bio',1800)}).catch(()=>{})}catch(err){}});
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
-document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-(function(){const el=document.getElementById('clock');
-  function tick(){try{el.textContent='Vilnius '+new Date().toLocaleTimeString('en-GB',{timeZone:'Europe/Vilnius',hour:'2-digit',minute:'2-digit'})}catch(e){}}
-  tick();setInterval(tick,30000);})();
+document.getElementById('copy').addEventListener('click',function(){
+  var b=this,t=document.getElementById('bio').innerText;
+  (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='Copied'},function(){b.textContent='Select and copy the text above'});
+  setTimeout(function(){b.textContent='Copy bio'},2500);
+});
 </script>
 </body>
 </html>
